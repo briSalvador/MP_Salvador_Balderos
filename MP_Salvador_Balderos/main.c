@@ -3,29 +3,35 @@
 #include <windows.h>
 #include <stdint.h>
 
-//extern long long int sum(long long int a1, long long int a2, long long int* a3);
-//
-//int main()
-//{
-//	long long int a1, a2, a3, ans;
-//	a1 = 512;
-//	a2 = 1024;
-//	a3 = 5;
-//	ans = sum(a1, a2, &a3);
-//	printf("%lld + %lld = %lld \n", a1, a2, ans);
-//	printf("new A3 value is %lld", a3);
-//	return 0;
-//}
-
-extern void testFun(uint8_t* x);
+// extern void testFun();
 
 int main(){
-    uint8_t x;
-    scanf_s("%hhu", &x);
+    //testFun();
 
-    printf("Before: %hhu\n", x);
-    testFun(&x);
-    printf("After: %hhu", x);
+    //INITIALIZE VALUES
+    int height = 0;
+    int width = 0;
+
+    //GET INPUT
+    printf("Instructions: Enter your input separating them with a space after each number.\n");
+    printf("Enter your input: ");
+    scanf_s("%d", &height);
+    scanf_s("%d", &width);    
+
+    int arrSize = height * width;
+    int* arr = (int*)malloc(arrSize * sizeof(int));
+
+    for (int i = 0; i < arrSize; i++) {
+        scanf_s("%d", &arr[i]);
+    }
+
+    //FOR TESTING VALUES ENTERED ONLY, UNCOMMENT AS NEEDED
+    //printf("\n height: %d", height);
+    //printf("\n width: %d", width);
+    printf("You entered: ");
+    for (int i = 0; i < arrSize; i++) {
+        printf("%d ", arr[i]);
+    }
 
     return 0;
 }
