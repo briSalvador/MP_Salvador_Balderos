@@ -122,4 +122,7 @@ From the different test scripts we have run, we can see that as the input size g
 ![image](https://github.com/user-attachments/assets/fafce8af-a084-4462-a574-1bb1fac3e090)
 
 ## Youtube video presentation
-- https://youtube.com/watch?v=7XDzwXpDJXA&si=rV-_VaLjJSaRdsmU
+- 
+Ernest Y. Balderosa
+Ernest Y. Balderosa
+https://youtu.be/Fu-Dvfa8zhc?si=IhdumkJ-avw30jU6
