@@ -38,7 +38,7 @@ int main() {
 
     for (int i = 0; i < height; i++) {
         for (int j = 0; j < width; j++) {
-            scanf_s("%hhu", &arr[i][j]); // Read integers separated by spaces
+            scanf_s("%hhu,", &arr[i][j]); // Read integers separated by spaces
         }
     }
 
