@@ -66,8 +66,6 @@ int main() {
 
         averageTime = totalTime / (double) 30;
 
-        printf("\nTime taken to execute: %lf ms\n", averageTime);
-
     }
     else {
         for (int i = 0; i < height; i++) {
@@ -115,8 +113,10 @@ int main() {
         }
 
         //PURELY FOR CHECKING
-        printf("\nsum1: %lf; sum2: %lf", totalTime, timeRecordSum);
+        //printf("\nsum1: %lf; sum2: %lf", totalTime, timeRecordSum);
     }
+
+    printf("\nTime taken to execute: %lf ms\n", averageTime);
 
     /*for (int i = 0; i < arrSize; i++) {
         scanf_s("%d", &arr[i]);
